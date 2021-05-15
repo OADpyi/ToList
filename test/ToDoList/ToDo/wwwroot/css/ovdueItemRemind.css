@@ -1,0 +1,43 @@
+body {
+    font-size:14px;
+}
+
+.li-show {
+    border-bottom: 1px dashed #808080;
+    width: 1000px;
+    line-height: 40px;
+    background: whitesmoke;
+    margin-bottom:20px;
+}
+
+    .li-show .overdue-content {
+        margin-left: 10px;
+        margin-right:40px;
+    }
+
+    .li-show .overdue-createTime {
+        margin-right: 20px;
+    }
+
+    .li-show .overdue-mark {
+        margin-right: 50px;
+    }
+
+    .ol-show{
+        padding-left:85px;
+        margin-top:30px;
+    }
+
+.input-inventory-name,.overdue-mark {
+    color: #7e7e7e;
+    width: 400px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.li-show a {
+    text-decoration: none;
+}

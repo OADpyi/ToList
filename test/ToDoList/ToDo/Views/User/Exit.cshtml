@@ -1,0 +1,35 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Exit</title>
+    <link href="~/css/Register.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="register">
+        <div class="register-item">
+            <div class="word">注册</div>
+            <form action="/User/Register" method="post">
+                <div class="entire">
+                    <div>
+                        <input class="input-box" name="userName" type="text" placeholder=" 请输入昵称" />
+                    </div>
+                    <div>
+                        <input class="input-box" name="password" type="password" placeholder=" 请输入密码" />
+                    </div>
+                    <div>
+                        <input class="input-box" name="repassword" type="password" placeholder=" 请再次输入密码" />
+                    </div>
+                </div>
+                <div id="exit">该用户已存在！！！请换个名称试试</div>
+                <input class="head-in" type="submit" style="cursor:pointer" value="提交" onclick="openwin()" />
+            </form>
+        </div>
+    </div>
+    <script src="~/js/Register.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link href="~/css/home.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/images/待办事项.ico">
+    <script>
+        function MM_over(mmObj) {
+            var mSubObj = mmObj.getElementsByTagName("div")[0];
+            mSubObj.style.display = "block";
+        }
+        function MM_out(mmObj) {
+            var mSubObj = mmObj.getElementsByTagName("div")[0];
+            mSubObj.style.display = "none";
+        }
+    </script>
+
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="user">
+                <div onmouseover="MM_over(this)" onmouseout="MM_out(this)" style="display:inline-block;position:relative;">
+                    <img src="~/images/用户 (1).png" alt="user" id="img" />
+                    <div style="width:200px;height:0px;display:none;position:absolute;left:0;top:15px;">
+                        <div class="entire">
+                            <a href="/User/UserInformationPage" style="cursor:pointer">
+                                <img src="~/images/修改用户信息.png" width="35" alt="" title="修改用户信息" />
+                            </a>
+                            <a href="/User/Logout" style="cursor:pointer">
+                                <img src="~/images/切换.png" width="35" alt="" title="切换账号" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="username">
+                    <span id="UserName"></span>
+                    <a href="/Item/FindItem" class="look"><img src="~/images/搜索 (2).png" alt="搜索" id="img1" title="搜索事项" /></a>
+                </div>
+            </div>
+
+            <div class="elment">
+                <img src="~/images/所有事项.png" alt="清单" id="img" />
+                <a href="/Inventory/ViewInventory" class="a">清单</a>
+                <span id="InventoryCount"></span>
+            </div>
+            <div class="elment">
+                <img src="~/images/完成.png" alt="完成" id="img" />
+                <a href="/Item/ShowAllFinishItem" class="a">完成</a>
+                <span id="finishItemCount"></span>
+            </div>
+            <div class="elment">
+                <img src="~/images/过期.png" alt="过期" id="img" />
+                <a href="/Item/ShowAllOverdueItem" class="a">过期</a>
+                <span id="OverdueItemCount"></span>
+            </div>
+            <div class="elment">
+                <img src="~/images/未完成 (1).png" alt="未完成" id="img" />
+                <a href="/Item/ShowAllItem" class="a">未完成</a>
+                <span id="notFinishItemCount"></span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="date">
+                    <div class="date-left">
+                        <span id="dianjicishu">
+                            <script>
+                                var date = new Date();  //创建对象
+                                var y = date.getFullYear();     //获取年份
+                                var m = date.getMonth() + 1;   //获取月份  返回0-11
+                                var d = date.getDate(); // 获取日
+                                document.write(y + "-" + m + "-" + d);
+                            </script>
+                        </span>
+                        <img src="~/images/滑动剪头_左.png" alt="" style="cursor:pointer" onclick="subtract()" id="img2" />
+                        <img src="~/images/滑动剪头_右.png" alt="" style="cursor:pointer" onclick="add()" id="img2" />
+                        <span class="today">今天</span>
+                    </div>
+                    <div class="overdue-input">
+                        <span>查看即将过期:</span>
+                        <form action="/Item/OverdueItemRemind" class="form-input">
+                            <input type="text" name="days" id="days" placeholder="提前几天提醒" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            @RenderBody()
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script src="~/js/ajax/ajax.js"></script>
+    <script src="~/js/DateTime.js"></script>
+</body>
+</html>

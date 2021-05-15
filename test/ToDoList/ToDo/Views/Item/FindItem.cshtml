@@ -1,0 +1,41 @@
+@model int
+@{
+    ViewData["Title"] = "FindItem";
+}
+<link href="~/css/FindItem.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+@if (@Model == 1)
+{
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert">
+            &times;
+        </a>
+        <strong>警告！</strong>没有此事项！
+    </div>
+
+}
+@if (@Model == 2)
+{
+    <script type="text/javascript">
+
+        {
+            alert("事项已删除！");
+        }
+    </script>
+}
+@if (@Model == 3)
+{
+    <script type="text/javascript">
+
+        {
+            alert("事项删除失败！");
+        }
+    </script>
+}
+
+<link href="~/css/SearchItem.css" rel="stylesheet" />
+<form method="post" action="/Item/FindItem">
+    <input class="searchItem" name="content" type="text" value="搜索事项" onfocus="this.value=''" onblur="this.value='搜索事项'" onkeydown='if(event.keyCode==13){gosubmit();}' />
+</form>

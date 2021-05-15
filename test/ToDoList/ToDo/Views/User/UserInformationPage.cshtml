@@ -1,0 +1,22 @@
+@model ToDo.Models.UserViewModel
+@{
+    ViewData["Title"] = "ViewUserInformation";
+}
+<link href="~/css/UserPage.css" rel="stylesheet" />
+<div class="Page">
+    <h2 class="header-picture"><img src="~/images/用户 (1).png" alt="用户头像" /></h2>
+    <form action="/User/ModifyUserInformation" method="post">
+        <div class="input-text">
+            <span>用户名</span>
+            <input type="text" name="newUserName" value="@Model.UserName" class="user-input" />
+        </div>
+        <div class="input-text">
+            <span>邮箱</span>
+            <input type="email" name="newEmail" value="@Model.Email" class="user-input" />
+        </div>
+        <div class="input-a">
+            <input class="button" type="submit" style="cursor:pointer" value="确认修改" />
+            <a href="/User/ModifyPasswordPage"><span>修改密码</span></a>
+        </div>
+    </form>
+</div>

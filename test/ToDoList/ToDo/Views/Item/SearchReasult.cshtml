@@ -1,0 +1,55 @@
+
+@model List<ToDo.Models.ItemViewModels>
+@{
+    ViewData["Title"] = "SearchReasult";
+}
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="~/js/index.js"></script>
+<link href="~/css/SearchResult.css" rel="stylesheet" />
+<table class="showItems">
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+
+        <tr class="oneItem">
+            <td>
+                <div class="circlde"><div id="inside-circle" onclick="changeBackground();"></div></div>
+            </td>
+            <td class="searchItemContent">
+                <a href="/Item/ChangeItem?itemId=@Model[i].ItemId&IsReturnSearch=true&content=@Model[i].ChangeBeforeContent" title="修改事项">
+                    <span class="input-inventory-name">@Model[i].Content</span>
+                </a>
+            </td>
+            <td class="showTime">
+                @Model[i].CreateTime.Month/@Model[i].CreateTime.Day
+                &nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute
+            </td>
+            <td>
+                <a onclick="deleteItemInInventory(@Model[i].ItemId,@Model[i].ItemOfInventoryId)" data-toggle="modal" data-target="#findItem-delete">
+                    <img src="~/images/删除.png" class="findItem-delete-img" style="width:20px;height:20px;" />
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+<div class="modal fade" id="findItem-delete">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    你确定要删除吗？
+                </h4>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" name="inventoryId" id="input" />
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-primary" onclick="DeleteInventory()">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

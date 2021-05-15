@@ -1,0 +1,53 @@
+.showTime {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.oneItem {
+    width: 400px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+#inside-circle {
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.showItems {
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+.delete {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.deleteItem {
+    margin-left: 40px;
+}
+
+.searchItemContent {
+    color: #7e7e7e;
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.searchItemContent a{
+    text-decoration:none;
+}

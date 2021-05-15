@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Inventory";
+}
+<link href="~/css/Inventory.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="~/js/ajax/ajax.js"></script>
+<script src="~/js/index.js"></script>
+<script src="~/js/bootbox.js"></script>
+<table id="content">
+    <tr>
+        <td id="content-block1"></td>
+        <td id="content-block2">
+            <div class="color-block" id="block2">
+                <b>事项</b>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td id="content-block3">
+            <div class="color-block" id="block3">
+                <b>完成事项</b>
+            </div>
+        </td>
+        <td id="content-block4">
+            <div class="color-block" id="block4">
+                <b>过期事项</b>
+            </div>
+        </td>
+    </tr>
+</table>
+<script language=javascript>
+    function test(radio) {
+        radio.checked = false;
+    }
+</script>
+

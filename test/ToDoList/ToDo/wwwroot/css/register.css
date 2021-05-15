@@ -1,0 +1,58 @@
+body {
+    background-image: url('../images/注册背景.jpg');
+    background-size: cover;
+}
+
+.word {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.register {
+    margin-top:100px;
+    margin-left:30%;
+    margin-right:30%;
+    width: 500px;
+}
+
+    .register .register-item label {
+        float: left;
+        width: 120px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+.input-box {
+    font-size: 15px;
+    padding-left: 20px;
+    width: 270px;
+    height: 37px;
+    border: 1px solid blue;
+    margin-bottom: 35px;
+    border-radius: 9px;
+    background: paleturquoise;
+    outline: none;
+    /* text-align: center; */
+    margin-left: 99px;
+}
+
+.head-in {
+    margin-left: 201px;
+    height: 40px;
+    width: 95px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    background-color: whitesmoke;
+    background-color: paleturquoise;
+}
+
+.entire {
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+#exit {
+    color: red;
+    margin: 0px 80px 20px;
+}

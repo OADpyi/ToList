@@ -1,0 +1,18 @@
+@model List<ToDo.Models.ItemViewModels>
+@{
+    ViewData["Title"] = "ViewOverdueItemsRemind";
+}
+<link href="~/css/ovdueItemRemind.css" rel="stylesheet" />
+<ol class="ol-show">
+    @foreach (var item in Model)
+    {
+        <li class="li-show">
+            <a href="/Item/ChangeItem?itemId=@item.ItemId" title="修改事项">
+                <span class="input-inventory-name">内容：@item.Content</span>
+            </a>
+            <div class="overdue-mark">备注：@item.Mark</div>
+            <div class="overdue-createTime">创建时间：@item.CreateTime.Year/@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</div>
+            <div class="overdue-expirationTime">过期时间：@item.TimeOfExpiration.Year/@item.TimeOfExpiration.Month/@item.TimeOfExpiration.Day @item.TimeOfExpiration.Hour:@item.TimeOfExpiration.Minute</div>
+        </li>
+    }
+</ol>

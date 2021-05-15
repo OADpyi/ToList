@@ -1,0 +1,84 @@
+.Page {
+    width: 800px;
+    height: 800px;
+    margin-left: 14%;
+    margin-top: 50px;
+}
+
+    .Page span {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 15px;
+        color: #8cd7ee;
+        width: 134px;
+    }
+
+.input-text {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 600px;
+    background-color: #d6f4fe;
+    margin-top: 10px;
+    margin-bottom: 39px;
+    border-radius: 28px;
+    border: 1px solid #8cd7ee;
+    line-height: 50px;
+}
+
+.user-input {
+    vertical-align: middle;
+    width: 400px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid #d6f4fe;
+    background-color: #d6f4fe;
+    outline:none;
+}
+
+.title {
+    text-align: center;
+    color: #2cbff3;
+}
+
+.Page form {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.button {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #2cbff3;
+    color: #2cbff3;
+    margin-top: 30px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    outline:none;
+}
+
+.return-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #2cbff8;
+}
+
+    .return-bar img {
+        padding: 13px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        border-right: 1px solid #e7e7e7;
+    }
+
+.header-picture img{
+    margin-left: 287px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+}
+
+.input-a {
+    margin-left: 476px;
+    width: 267px;
+}

@@ -1,0 +1,54 @@
+@model ToDo.Models.ItemsListViewModel
+@{
+    Layout = null;
+}
+
+
+<div class="color-block" id="block2">
+    <b>未完成事项</b>
+    <a href="/Item/AddItem?inventoryId=@Model.InventoryId">
+        <img class="add" src="~/images/添加 (4).png" alt="图标" />
+    </a>
+</div>
+<ul class="ul-style">
+    @foreach (var item in Model.noFinished)
+    {
+        <li class="input-li">
+            <a onclick="ChangeStatue(@item.ItemId,@item.ItemOfInventoryId)">
+                <div class="circle">
+                    <label class="radio">
+                        <input type="radio" name="radio" value="1"><i></i>
+                    </label>
+                </div>
+            </a>
+            <a href="/Item/ChangeItem?itemId=@item.ItemId&isReturnHomePage=true" title="修改事项">
+                <span class="input-inventory-name">@item.Content</span>
+            </a>
+            <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+            <a onclick="deleteItemInInventory(@item.ItemId,@item.ItemOfInventoryId)" data-toggle="modal" data-target="#deleteItemInInventoryModel">
+                <img src="~/images/删除 (2).png" class="remove-icon" />
+            </a>
+        </li>
+    }
+</ul>
+<div class="modal fade" id="deleteItemInInventoryModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    你确定要删除吗？
+                </h4>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" name="itemId" id="itemId" />
+                <input type="hidden" name="inventoryId" id="inventoryId" />
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-primary" onclick="deleteNofinishItem()">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

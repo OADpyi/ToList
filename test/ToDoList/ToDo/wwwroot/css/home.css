@@ -1,0 +1,131 @@
+body {
+    margin: 0 auto;
+}
+.content {
+    overflow:hidden;
+    font-size:17px;
+}
+#img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#img1 {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.user {
+    margin: 20px 0 35px 0;
+}
+
+.left {
+    position: fixed;
+    height: 100%;
+    background: #5069c5;
+    float: left;
+    width: 18%;
+    color: white;
+}
+
+.right {
+    padding-left:18%;
+    float: left;
+    width: 100%;
+}
+
+.date {
+    margin-left: 41px;
+    color: #bab6b3;
+    line-height: 50px;
+}
+
+.top {
+    border-bottom: 1px solid #bab6b3;
+}
+
+.today {
+    border: 1px solid #2cbff3;
+    padding: 3px 15px;
+    color: white;
+    background: #2cbff3;
+}
+
+#img2 {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.elment #num {
+    float: right;
+    margin-right: 16%;
+    margin-top: 5%;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 152px;
+}
+
+.entire {
+    float: left;
+    padding-top: 30px;
+    padding-left: 11px;
+    padding-right: 11px;
+    background-image: url(../images/对话框.png);
+    background-size: 85px 55px;
+    background-repeat: no-repeat;
+    background-position: 12% 174%;
+}
+
+
+.username {
+    display: inline-block;
+}
+
+.username span{
+    display:inline-block;
+    width:147px;
+}
+
+.look{
+     color:white;
+     text-decoration:none;
+}
+
+.elment:hover {
+    background: #104E8B;
+}
+
+.form-input {
+    display: inline-block;
+}
+
+.overdue-input {
+    display: inline-block;
+    padding-left: 400px;
+}
+
+.form-input input {
+    height: 30px;
+    border: 1px solid #bab6b3;
+    border-radius: 5px;
+    width: 134px;
+    padding-left: 10px;
+    outline:none;
+}
+.date-left{
+    display:inline-block;
+    width:500px;
+}

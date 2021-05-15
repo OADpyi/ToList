@@ -1,0 +1,25 @@
+@model ToDo.Models.ModifyInventoryViewModel
+    @{
+        ViewData["Title"] = "ViewModifyInventoryName";
+    }
+    <link href="~/css/ViewModifyInventoryName.css" rel="stylesheet" />
+    <div class="return-bar">
+        <a href="/Inventory/ViewInventory"><img src="~/images/返回.png" alt="图标" /></a>
+    </div>
+    <div id="modify-face">
+        <div class="inventoryName">
+            <p class="index">清单名:</p>
+            <span class="inventory-name">@Model.InventoryName</span>
+        </div>
+        <div class="item-number">
+            <p class="index">事项个数:</p>
+            <span>@Model.InventoryItemsCount</span>
+        </div>
+        <form action="/Inventory/GetModifyInventoryName?inventoryId=@Model.InventoryId" method="post">
+            <div class="modify">
+                <p>修改清单名称: <input type="text" name="newInventoryName" /></p>
+            </div>
+            <input type="submit" value="确认修改" class="input-button" />
+        </form>
+    </div>
+

@@ -1,0 +1,30 @@
+@model int
+@{
+    ViewData["Title"] = "PasswordErrorPopup";
+}
+
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+@if (@Model == 1)
+{
+    <div class="alert alert-warning">
+        <a href="/User/GetModifyPasswordPage" class="close" data-dismiss="alert">
+            &times;
+        </a>
+        <strong>警告！</strong>密码与原密码不一致或两次新密码输入不一致！。
+    </div>
+}
+@if (@Model == 2)
+{
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert">
+            &times;
+        </a>
+        <strong>警告！</strong>此清单名已被使用！。
+    </div>
+}
+
+
+
+

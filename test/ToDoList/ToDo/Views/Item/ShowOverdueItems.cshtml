@@ -1,0 +1,23 @@
+@model List<ToDo.Models.ItemViewModels>
+@{
+    Layout = null;
+}
+<div class="color-block" id="block4">
+    <b>过期事项</b>
+</div>
+<ul class="ul-style">
+    @foreach (var item in Model)
+    {
+        <li class="input-li">
+            <input type="radio" name="R1" onclick="test(this)">
+            <a href="/Item/ChangeItem?itemId=@item.ItemId&isReturnHomePage=true" title="修改事项">
+                <span class="input-inventory-name">@item.Content</span>
+            </a>
+            <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+            <a onclick="deleteItemInInventory(@item.ItemId,@item.ItemOfInventoryId)" data-toggle="modal" data-target="#deleteItemInInventoryModel">
+                <img src="~/images/删除 (2).png" class="remove-icon" />
+            </a>
+        </li>
+    }
+</ul>
+

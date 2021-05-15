@@ -1,0 +1,31 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewLogin</title>
+    <link href="~/css/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="login">
+        <div class="login-item">
+            <form action="/User/Login" method="post">
+                <div class="display">
+                    <input class="input-box" id="name" name="userName" type="text" placeholder=" name" onblur="checkname();" />
+                    <div id="remindName" class="remind" style="display:none">名字不能为空！</div>
+                    <input class="input-box" id="password" name="password" type="password" placeholder=" password" onblur="checkpassword();" />
+                    <div id="remindPassword" class="remind" style="display:none">密码不能为空！</div>
+                </div>
+                <input class="login-up" type="submit" style="cursor:pointer" value="Login" onclick="remind()" />
+            </form>
+            <a class="register" href="/User/ToRegister">Register</a>
+            <img src="~/images/感叹号.png" class="register-img" />
+        </div>
+    </div>
+    <script src="~/js/Login.js"></script>
+</body>
+</html>

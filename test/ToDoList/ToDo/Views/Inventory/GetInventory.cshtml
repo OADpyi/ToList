@@ -1,0 +1,52 @@
+@model List<ToDo.Models.InventoryViewModel>
+@{
+    Layout = null;
+}
+
+<div class="color-block" id="block1">
+    <b>清单</b>
+    <div id="myimg" onclick="viewCreateInventory()" style=" display:inline-block">
+        <img class="add" src="~/images/添加 (4).png" alt="图标" />
+    </div>
+</div>
+<div id="invnetory-block">
+    <ul class="ul-style">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <li class="input-li">
+                <div class="circle" onclick="showInventoryItems(@Model[i].InventoryId)">
+                    <label class="radio">
+                        <input type="radio" name="radio" value="1"><i></i>
+                    </label>
+                </div>
+                <a href="/Inventory/ViewModifyInventoryName?inventoryId=@Model[i].InventoryId" title="修改清单">
+                    <span class="input-inventory-name">@Model[i].InventoryName</span>
+                </a>
+                <div class="time-delete">
+                    <span class="input-inventory-time">@Model[i].CreateTime.Month/@Model[i].CreateTime.Day&nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute</span>
+                    <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#delete_inventory"><img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" /></a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+<div class="modal fade" id="delete_inventory">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    你确定要删除吗？
+                </h4>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" name="inventoryId" id="input" />
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-primary" onclick="DeleteInventory()">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.searchItem {
+    border-bottom: 1px solid #808080;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    font-size: 30px;
+    color: #808080;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+
+.maincontent {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.directory {
+    float: left;
+    width: 300px;
+    font-size: 400px;
+}

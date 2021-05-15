@@ -1,0 +1,133 @@
+#datetext {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    background: #2cbff3;
+    color: white;
+    margin: 0px;
+    height: 25px;
+    width: 58px;
+}
+
+#date {
+    vertical-align: middle;
+    margin-left: 31px;
+    font-size: 18px;
+    color: #bab6b3;
+}
+
+.icon {
+    vertical-align: middle;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+#top-bar {
+    margin-top: 24px;
+    border-bottom: 1px solid #bab6b3;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#date-block {
+    margin: 10px;
+}
+
+.color-block {
+    margin-top: 10px;
+    display: inline-block;
+    width: 473px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-left: 14px;
+}
+
+.add {
+    vertical-align: middle;
+    margin-left: 330px;
+    width: 20px;
+    height: 20px
+}
+
+#content td {
+    display: inline-block;
+    padding: 0px;
+    width: 513px;
+    height: 300px;
+    margin: 0px;
+}
+
+.color-block b {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#block1 {
+    background: #ffede7;
+    color: #f9aea9;
+}
+
+#block2 {
+    background: #ffefcb;
+    color: #ffe1b3;
+}
+
+#block3 {
+    background: #d6f4fe;
+    color: #97d8ee;
+}
+
+#block4 {
+    background: #eeffdd;
+    color: #a4d995;
+}
+
+#content-block1 {
+    border-right: 1px solid #bab6b3;
+}
+
+#content-block2 {
+    border-bottom: 1px solid #bab6b3;
+}
+
+#content-block3 {
+    border-top: 1px solid #bab6b3;
+}
+
+#content-block4 {
+    border-left: 1px solid #bab6b3;
+}
+
+#content {
+    border: 0px;
+}
+
+.input-inventory-name {
+    color: #7e7e7e;
+}
+
+.input-li {
+    list-style: none;
+    border-bottom: 1px dashed #808080;
+}
+
+.input-inventory-time {
+    font-size: 12px;
+    color: #bab6b3;
+}
+
+.input-text {
+    border: 1px solid #ffede7;
+    width: 350px;
+}
+
+.enter-icon{
+    width:25px;
+    height:25px;
+}
