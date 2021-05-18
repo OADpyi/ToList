@@ -1,0 +1,13 @@
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDo.deps.json
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDo.runtimeconfig.json
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDo.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDo.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDo.pdb
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\Data.Entity.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDoList.Logic.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\ToDoList.Logic.pdb
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\bin\Debug\netcoreapp1.1\Data.Entity.pdb
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\obj\Debug\netcoreapp1.1\ToDo.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\obj\Debug\netcoreapp1.1\ToDo.AssemblyInfo.cs
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\obj\Debug\netcoreapp1.1\ToDo.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\ToDo\obj\Debug\netcoreapp1.1\ToDo.pdb

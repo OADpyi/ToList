@@ -16,18 +16,9 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetItemsInInventory(int inventoryId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId).ToList();
-            List<Items> notFinishItemsInInventory = new List<Items>();
-            foreach (var item in items)
-            {
-                //未完成且未过期
-                if (item.State == false && item.IsOverdue == false)
-                {
-                    notFinishItemsInInventory.Add(item);
-                }
-            }
-
-            return notFinishItemsInInventory;
+            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId 
+            && p.State==false && p.IsOverdue==false).ToList();
+            return items;
         }
 
         /// <summary>
@@ -37,17 +28,8 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetFinishedItemsInInventory(int inventoryId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId).ToList();
-            List<Items> finishItemsInInventory = new List<Items>();
-            foreach (var item in items)
-            {
-                if (item.State == true)
-                {
-                    finishItemsInInventory.Add(item);
-                }
-            }
-
-            return finishItemsInInventory;
+            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId && p.State==true).ToList();
+            return items;
         }
 
         /// <summary>
@@ -57,18 +39,9 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetOverdueItemsInInventory(int inventoryId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId).ToList();
-            List<Items> overdueItemsInInventory = new List<Items>();
-            foreach (var item in items)
-            {
-                //未完成且过期
-                if (item.State == false && item.IsOverdue == true)
-                {
-                    overdueItemsInInventory.Add(item);
-                }
-            }
-
-            return overdueItemsInInventory;
+            List<Items> items = _ctx.Items.Where(p => p.ItemOfInventoryId == inventoryId
+            && p.State==false && p.IsOverdue==true).ToList();
+            return items;
         }
 
         /// <summary>
@@ -78,18 +51,9 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetAllNotFinishIteams(int userId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.UserId == userId).ToList();
-            List<Items> notFinishItems = new List<Items>();
-            foreach (var item in items)
-            {
-                //未完成且未过期
-                if (item.State == false && item.IsOverdue == false)
-                {
-                    notFinishItems.Add(item);
-                }
-            }
-
-            return notFinishItems;
+            List<Items> items = _ctx.Items.Where(p => p.UserId == userId 
+            && p.State==false && p.IsOverdue==false).ToList();
+            return items;
         }
 
 
@@ -100,17 +64,9 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetAllFinishIteams(int userId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.UserId == userId).ToList();
-            List<Items> finishItems = new List<Items>();
-            foreach (var item in items)
-            {
-                if (item.State == true)
-                {
-                    finishItems.Add(item);
-                }
-            }
-
-            return finishItems;
+            List<Items> items = _ctx.Items.Where(p => p.UserId == userId
+            && p.State==true).ToList();
+            return items;
         }
 
         /// <summary>
@@ -120,18 +76,9 @@ namespace Data.Service
         /// <returns></returns>
         public List<Items> GetAllOverdueIteams(int userId)
         {
-            List<Items> items = _ctx.Items.Where(p => p.UserId == userId).ToList();
-            List<Items> overdueItems = new List<Items>();
-            foreach (var item in items)
-            {
-                //未完成且过期
-                if (item.State == false && item.IsOverdue == true)
-                {
-                    overdueItems.Add(item);
-                }
-            }
-
-            return overdueItems;
+            List<Items> items = _ctx.Items.Where(p => p.UserId == userId
+            && p.State == false && p.IsOverdue == true).ToList();
+            return items;
         }
 
         /// <summary>

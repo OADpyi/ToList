@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\bin\Debug\netcoreapp1.1\ToDoList.Logic.deps.json
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\bin\Debug\netcoreapp1.1\ToDoList.Logic.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\bin\Debug\netcoreapp1.1\ToDoList.Logic.pdb
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\bin\Debug\netcoreapp1.1\Data.Entity.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\bin\Debug\netcoreapp1.1\Data.Entity.pdb
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\obj\Debug\netcoreapp1.1\ToDoList.Logic.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\obj\Debug\netcoreapp1.1\ToDoList.Logic.AssemblyInfo.cs
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\obj\Debug\netcoreapp1.1\ToDoList.Logic.dll
+C:\Users\DELL\Desktop\ToList\test\ToDoList\Data.Service\obj\Debug\netcoreapp1.1\ToDoList.Logic.pdb
