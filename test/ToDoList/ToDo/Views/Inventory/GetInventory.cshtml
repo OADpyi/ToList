@@ -23,8 +23,12 @@
                     <span class="input-inventory-name">@Model[i].InventoryName</span>
                 </a>
                 <div class="time-delete">
-                    <span class="input-inventory-time">@Model[i].CreateTime.Month/@Model[i].CreateTime.Day&nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute</span>
-                    <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#delete_inventory"><img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" /></a>
+                    <span class="input-inventory-time">
+                    @Model[i].CreateTime.Month/@Model[i].CreateTime.Day&nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute
+                    </span>
+                    <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#delete_inventory">
+                    <img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" />
+                    </a>
                 </div>
             </li>
         }
