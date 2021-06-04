@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "ViewOverdueItemsRemind";
 }
-<link href="~/css/ovdueItemRemind.css" rel="stylesheet" />
+<link href="~/css/Item/ovdueItemRemind.css" rel="stylesheet" />
 <ol class="ol-show">
     @foreach (var item in Model)
     {
@@ -11,8 +11,12 @@
                 <span class="input-inventory-name">内容：@item.Content</span>
             </a>
             <div class="overdue-mark">备注：@item.Mark</div>
-            <div class="overdue-createTime">创建时间：@item.CreateTime.Year/@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</div>
-            <div class="overdue-expirationTime">过期时间：@item.TimeOfExpiration.Year/@item.TimeOfExpiration.Month/@item.TimeOfExpiration.Day @item.TimeOfExpiration.Hour:@item.TimeOfExpiration.Minute</div>
+            <div class="overdue-createTime">
+            创建时间：@item.CreateTime.Year/@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute
+            </div>
+            <div class="overdue-expirationTime">
+            过期时间：@item.TimeOfExpiration.Year/@item.TimeOfExpiration.Month/@item.TimeOfExpiration.Day @item.TimeOfExpiration.Hour:@item.TimeOfExpiration.Minute
+            </div>
         </li>
     }
 </ol>

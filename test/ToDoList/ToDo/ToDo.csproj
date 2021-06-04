@@ -20,31 +20,45 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\AddItem.css" />
-    <Content Include="wwwroot\css\ChangeItem.css" />
-    <Content Include="wwwroot\css\FindItem.css" />
-    <Content Include="wwwroot\css\home.css" />
-    <Content Include="wwwroot\css\Inventory.css" />
+    <Content Include="wwwroot\css\Inventory\home.css" />
     <Content Include="wwwroot\css\Inventory\Inventory.css" />
     <Content Include="wwwroot\css\Inventory\ViewCreateInventory.css" />
     <Content Include="wwwroot\css\Inventory\ViewModifyInventoryName.css" />
     <Content Include="wwwroot\css\Item\AddItem.css" />
     <Content Include="wwwroot\css\Item\ChangeItem.css" />
     <Content Include="wwwroot\css\Item\FindItem.css" />
+    <Content Include="wwwroot\css\Item\home.css" />
     <Content Include="wwwroot\css\Item\ovdueItemRemind.css" />
-    <Content Include="wwwroot\css\Login.css" />
-    <Content Include="wwwroot\css\ovdueItemRemind.css" />
-    <Content Include="wwwroot\css\register.css" />
+    <Content Include="wwwroot\css\Item\SearchResult.css" />
     <Content Include="wwwroot\css\SearchResult.css" />
-    <Content Include="wwwroot\css\UserPage.css" />
     <Content Include="wwwroot\css\User\home.css" />
     <Content Include="wwwroot\css\User\Login.css" />
     <Content Include="wwwroot\css\User\register.css" />
     <Content Include="wwwroot\css\User\UserPage.css" />
-    <Content Include="wwwroot\css\ViewCreateInventory.css" />
-    <Content Include="wwwroot\css\ViewModifyInventoryName.css" />
     <Content Include="wwwroot\images\1.jpg" />
     <Content Include="wwwroot\images\enter (1).png" />
+    <Content Include="wwwroot\images\Inventory\enter %281%29.png" />
+    <Content Include="wwwroot\images\Inventory\删除 %282%29.png" />
+    <Content Include="wwwroot\images\Inventory\添加 %284%29.png" />
+    <Content Include="wwwroot\images\Item\内容 %281%29.png" />
+    <Content Include="wwwroot\images\Item\创建时间.png" />
+    <Content Include="wwwroot\images\Item\删除.png" />
+    <Content Include="wwwroot\images\Item\备注.png" />
+    <Content Include="wwwroot\images\Item\沙漏已过期18px.png" />
+    <Content Include="wwwroot\images\User\1.jpg" />
+    <Content Include="wwwroot\images\User\修改用户信息.png" />
+    <Content Include="wwwroot\images\User\切换.png" />
+    <Content Include="wwwroot\images\User\完成.png" />
+    <Content Include="wwwroot\images\User\对话框.png" />
+    <Content Include="wwwroot\images\User\感叹号.png" />
+    <Content Include="wwwroot\images\User\所有事项.png" />
+    <Content Include="wwwroot\images\User\搜索 %282%29.png" />
+    <Content Include="wwwroot\images\User\未完成 %281%29.png" />
+    <Content Include="wwwroot\images\User\注册背景.jpg" />
+    <Content Include="wwwroot\images\User\滑动剪头_右.png" />
+    <Content Include="wwwroot\images\User\滑动剪头_左.png" />
+    <Content Include="wwwroot\images\User\用户 %281%29.png" />
+    <Content Include="wwwroot\images\User\过期.png" />
     <Content Include="wwwroot\images\User\返回.png" />
     <Content Include="wwwroot\images\修改用户信息.png" />
     <Content Include="wwwroot\images\内容 (1).png" />
@@ -62,13 +76,11 @@
     <Content Include="wwwroot\images\未完成 (1).png" />
     <Content Include="wwwroot\images\沙漏已过期18px.png" />
     <Content Include="wwwroot\images\注册背景.jpg" />
-    <Content Include="wwwroot\images\注销 (1).png" />
     <Content Include="wwwroot\images\添加 (4).png" />
     <Content Include="wwwroot\images\滑动剪头_右.png" />
     <Content Include="wwwroot\images\滑动剪头_左.png" />
     <Content Include="wwwroot\images\用户 (1).png" />
     <Content Include="wwwroot\images\过期.png" />
-    <Content Include="wwwroot\images\返回.png" />
     <Content Include="wwwroot\images\退出 (2).png" />
     <Content Include="wwwroot\js\ajax\ajax.js" />
     <Content Include="wwwroot\js\bootbox.js" />
@@ -95,10 +107,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data.Service\ToDoList.Logic.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\images\Inventory\" />
-    <Folder Include="wwwroot\images\Item\" />
   </ItemGroup>
 
 </Project>

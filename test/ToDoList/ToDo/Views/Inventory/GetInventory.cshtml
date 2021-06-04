@@ -6,7 +6,7 @@
 <div class="color-block" id="block1">
     <b>清单</b>
     <div id="myimg" onclick="viewCreateInventory()" style=" display:inline-block">
-        <img class="add" src="~/images/添加 (4).png" alt="图标" />
+        <img class="add" src="~/images/Inventory/添加 (4).png" alt="图标" />
     </div>
 </div>
 <div id="invnetory-block">
@@ -27,7 +27,7 @@
                     @Model[i].CreateTime.Month/@Model[i].CreateTime.Day&nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute
                     </span>
                     <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#delete_inventory">
-                    <img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" />
+                    <img src="~/images/Inventory/删除 (2).png" alt="图标" class=" remove-icon" />
                     </a>
                 </div>
             </li>

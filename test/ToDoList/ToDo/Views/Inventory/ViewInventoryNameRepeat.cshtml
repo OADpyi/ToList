@@ -13,7 +13,7 @@
     </div>
     <div class="color-block" id="block1">
         <input type="text" placeholder="输入清单名称，字数小于50字，Enter键结束" maxlength="50" name="inventoryName" class="input-text" onkeyup="AfterViewCreateInventory()" id="create-inventory-name" />
-        <img src="~/images/enter (1).png" class="enter-icon" />
+        <img src="~/images/Inventory/enter (1).png" class="enter-icon" />
     </div>
     <div id="invnetory-block">
         <ul>
@@ -29,7 +29,9 @@
                         <span class="input-inventory-name">@Model[i].InventoryName</span>
                     </a>
                     <span class="input-inventory-time">@Model[i].CreateTime.Month/@Model[i].CreateTime.Day&nbsp;&nbsp;@Model[i].CreateTime.Hour:@Model[i].CreateTime.Minute</span>
-                    <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#myModal"><img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" /></a>
+                    <a onclick="deleteInventory(@Model[i].InventoryId)" data-toggle="modal" data-target="#myModal">
+                    <img src="~/images/Inventory/删除 (2).png" alt="图标" class=" remove-icon" />
+                    </a>
                 </li>
         }
         </ul>

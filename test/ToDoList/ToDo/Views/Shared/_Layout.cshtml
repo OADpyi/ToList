@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
-    <link href="~/css/home.css" rel="stylesheet" />
+    <link href="~/css/Inventory/home.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/images/待办事项.ico">
     <script>
         function MM_over(mmObj) {
@@ -24,41 +24,41 @@
         <div class="left">
             <div class="user">
                 <div onmouseover="MM_over(this)" onmouseout="MM_out(this)" style="display:inline-block;position:relative;">
-                    <img src="~/images/用户 (1).png" alt="user" id="img" />
+                    <img src="~/images/User/用户 (1).png" alt="user" id="img" />
                     <div style="width:200px;height:0px;display:none;position:absolute;left:0;top:15px;">
                         <div class="entire">
                             <a href="/User/UserInformationPage" style="cursor:pointer">
-                                <img src="~/images/修改用户信息.png" width="35" alt="" title="修改用户信息" />
+                                <img src="~/images/User/修改用户信息.png" width="35" alt="" title="修改用户信息" />
                             </a>
                             <a href="/User/Logout" style="cursor:pointer">
-                                <img src="~/images/切换.png" width="35" alt="" title="切换账号" />
+                                <img src="~/images/User/切换.png" width="35" alt="" title="切换账号" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="username">
                     <span id="UserName"></span>
-                    <a href="/Item/FindItem" class="look"><img src="~/images/搜索 (2).png" alt="搜索" id="img1" title="搜索事项" /></a>
+                    <a href="/Item/FindItem" class="look"><img src="~/images/User/搜索 (2).png" alt="搜索" id="img1" title="搜索事项" /></a>
                 </div>
             </div>
 
             <div class="elment">
-                <img src="~/images/所有事项.png" alt="清单" id="img" />
+                <img src="~/images/User/所有事项.png" alt="清单" id="img" />
                 <a href="/Inventory/ViewInventory" class="a">清单</a>
                 <span id="InventoryCount"></span>
             </div>
             <div class="elment">
-                <img src="~/images/完成.png" alt="完成" id="img" />
+                <img src="~/images/User/完成.png" alt="完成" id="img" />
                 <a href="/Item/ShowAllFinishItem" class="a">完成</a>
                 <span id="finishItemCount"></span>
             </div>
             <div class="elment">
-                <img src="~/images/过期.png" alt="过期" id="img" />
+                <img src="~/images/User/过期.png" alt="过期" id="img" />
                 <a href="/Item/ShowAllOverdueItem" class="a">过期</a>
                 <span id="OverdueItemCount"></span>
             </div>
             <div class="elment">
-                <img src="~/images/未完成 (1).png" alt="未完成" id="img" />
+                <img src="~/images/User/未完成 (1).png" alt="未完成" id="img" />
                 <a href="/Item/ShowAllItem" class="a">未完成</a>
                 <span id="notFinishItemCount"></span>
             </div>
@@ -76,8 +76,8 @@
                                 document.write(y + "-" + m + "-" + d);
                             </script>
                         </span>
-                        <img src="~/images/滑动剪头_左.png" alt="" style="cursor:pointer" onclick="subtract()" id="img2" />
-                        <img src="~/images/滑动剪头_右.png" alt="" style="cursor:pointer" onclick="add()" id="img2" />
+                        <img src="~/images/User/滑动剪头_左.png" alt="" style="cursor:pointer" onclick="subtract()" id="img2" />
+                        <img src="~/images/User/滑动剪头_右.png" alt="" style="cursor:pointer" onclick="add()" id="img2" />
                         <span class="today">今天</span>
                     </div>
                     <div class="overdue-input">

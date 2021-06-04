@@ -3,7 +3,7 @@
     ViewData["Title"] = "ShowAllFinishItem";
 }
 
-<link href="~/css/Inventory.css" rel="stylesheet" />
+<link href="~/css/Inventory/Inventory.css" rel="stylesheet" />
 <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             </a>
             <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
             <a onclick="deleteInventory(@item.ItemId)" data-toggle="modal" data-target="#deleteItem">
-                <img src="~/images/删除.png" style="width:20px;height:20px;" />
+                <img src="~/images/Item/删除.png" style="width:20px;height:20px;" />
             </a>
         </li>
     }
