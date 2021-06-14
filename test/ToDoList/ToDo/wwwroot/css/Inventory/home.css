@@ -129,3 +129,21 @@ span {
     display:inline-block;
     width:500px;
 }
+
+.user .user-first-block {
+   display:inline-block;
+   position:relative;
+}
+
+.user .user-second-block {
+    width:200px;
+    height:0px;
+    display:none;
+    position:absolute;
+    left:0;
+    top:15px;
+}
+
+.user-first-a, .user-second-block, .date-left img {
+    cursor: pointer;
+}

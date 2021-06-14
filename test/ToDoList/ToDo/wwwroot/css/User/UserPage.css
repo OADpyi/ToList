@@ -54,7 +54,8 @@
     width: 80px;
     height: 40px;
     border-radius: 10px;
-    outline:none;
+    outline: none;
+    cursor:pointer;
 }
 
 .return-bar {

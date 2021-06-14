@@ -15,7 +15,7 @@
         <td id="content-block1">
             <div class="color-block" id="block1">
                 <b>清单</b>
-                <div id="myimg" onclick="viewCreateInventory()" style=" display:inline-block">
+                <div id="myimg" onclick="viewCreateInventory()">
                     <img class="add" src="~/images/Inventory/添加 (4).png" alt="图标" />
                 </div>
             </div>
@@ -32,8 +32,13 @@
                             <a href="/Inventory/ViewModifyInventoryName?inventoryId=@Model.allInventorys[i].InventoryId" title="修改清单">
                                 <span class="input-inventory-name">@Model.allInventorys[i].InventoryName</span>
                             </a>
-                            <span class="input-inventory-time">@Model.allInventorys[i].CreateTime.Month/@Model.allInventorys[i].CreateTime.Day&nbsp;&nbsp;@Model.allInventorys[i].CreateTime.Hour:@Model.allInventorys[i].CreateTime.Minute</span>
-                            <a onclick="deleteInventory(@Model.allInventorys[i].InventoryId)" data-toggle="modal" data-target="#myModal"><img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" /></a>
+                            <span class="input-inventory-time">
+                            @Model.allInventorys[i].CreateTime.Month/@Model.allInventorys[i].CreateTime.Day&nbsp;&nbsp;
+                            @Model.allInventorys[i].CreateTime.Hour:@Model.allInventorys[i].CreateTime.Minute
+                            </span>
+                            <a onclick="deleteInventory(@Model.allInventorys[i].InventoryId)" data-toggle="modal" data-target="#myModal">
+                            <img src="~/images/删除 (2).png" alt="图标" class=" remove-icon" />
+                            </a>
                         </li>
                     }
                 </ul>
@@ -80,7 +85,9 @@
                         <a href="/Item/ChangeItem?itemId=@item.ItemId&isReturnHomePage=true" title="修改事项">
                             <span class="input-inventory-name">@item.Content</span>
                         </a>
-                        <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+                        <span class="input-inventory-time">
+                        @item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute
+                        </span>
                         <a onclick="deleteItemInInventory(@item.ItemId,@item.ItemOfInventoryId)" data-toggle="modal" data-target="#deleteItemInInventoryModel">
                             <img src="~/images/Inventory/删除 (2).png" class="remove-icon" />
                         </a>
@@ -129,7 +136,9 @@
                         <a href="/Item/ChangeItem?itemId=@item.ItemId&isReturnHomePage=true" title="修改事项">
                             <span class="input-inventory-name">@item.Content</span>
                         </a>
-                        <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+                        <span class="input-inventory-time">
+                        @item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute
+                        </span>
                         <a onclick="deleteItemInInventory(@item.ItemId,@item.ItemOfInventoryId)" data-toggle="modal" data-target="#deleteItemInInventoryModel">
                             <img src="~/images/Inventory/删除 (2).png" class="remove-icon" />
                         </a>
@@ -149,7 +158,9 @@
                         <a href="/Item/ChangeItem?itemId=@item.ItemId&isReturnHomePage=true" title="修改事项">
                             <span class="input-inventory-name">@item.Content</span>
                         </a>
-                        <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+                        <span class="input-inventory-time">
+                        @item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute
+                        </span>
                         <a onclick="deleteItemInInventory(@item.ItemId,@item.ItemOfInventoryId)" data-toggle="modal" data-target="#deleteItemInInventoryModel">
                             <img src="~/images/Inventory/删除 (2).png" class="remove-icon" />
                         </a>

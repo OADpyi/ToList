@@ -134,7 +134,8 @@ body {
     list-style: none;
     border-bottom: 1px dashed #808080;
     line-height: 40px;
-    width:630px;
+    width: 630px;
+    list-style-type:none;
 }
 
 .input-inventory-time {
@@ -331,4 +332,13 @@ ul li {
 
 .showAllOverdueItem-ul .input-inventory-name{
     width:500px;
+}
+
+.color-block #myimg {
+    display:inline-block;
+}
+
+.input-input-li img-delete{
+    width: 20px;
+    height: 20px;
 }

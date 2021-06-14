@@ -46,6 +46,7 @@ body {
     border: 1px solid #cfcfcf;
     background-color: whitesmoke;
     background-color: paleturquoise;
+    cursor:pointer;
 }
 
 .entire {
@@ -56,3 +57,4 @@ body {
     color: red;
     margin: 0px 80px 20px;
 }
+

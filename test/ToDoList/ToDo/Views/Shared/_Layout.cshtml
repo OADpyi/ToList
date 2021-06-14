@@ -1,7 +1,7 @@
+@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
@@ -17,20 +17,20 @@
             mSubObj.style.display = "none";
         }
     </script>
-
+    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
     <div class="content">
         <div class="left">
             <div class="user">
-                <div onmouseover="MM_over(this)" onmouseout="MM_out(this)" style="display:inline-block;position:relative;">
+                <div onmouseover="MM_over(this)" onmouseout="MM_out(this)" class="user-first-block">
                     <img src="~/images/User/用户 (1).png" alt="user" id="img" />
-                    <div style="width:200px;height:0px;display:none;position:absolute;left:0;top:15px;">
+                    <div class="user-second-block">
                         <div class="entire">
-                            <a href="/User/UserInformationPage" style="cursor:pointer">
+                            <a href="/User/UserInformationPage" class="user-first-a">
                                 <img src="~/images/User/修改用户信息.png" width="35" alt="" title="修改用户信息" />
                             </a>
-                            <a href="/User/Logout" style="cursor:pointer">
+                            <a href="/User/Logout" class="user-second-a">
                                 <img src="~/images/User/切换.png" width="35" alt="" title="切换账号" />
                             </a>
                         </div>
@@ -76,8 +76,8 @@
                                 document.write(y + "-" + m + "-" + d);
                             </script>
                         </span>
-                        <img src="~/images/User/滑动剪头_左.png" alt="" style="cursor:pointer" onclick="subtract()" id="img2" />
-                        <img src="~/images/User/滑动剪头_右.png" alt="" style="cursor:pointer" onclick="add()" id="img2" />
+                        <img src="~/images/User/滑动剪头_左.png" alt="" onclick="subtract()" id="img2" />
+                        <img src="~/images/User/滑动剪头_右.png" alt="" onclick="add()" id="img2" />
                         <span class="today">今天</span>
                     </div>
                     <div class="overdue-input">
@@ -94,5 +94,6 @@
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
     <script src="~/js/ajax/ajax.js"></script>
     <script src="~/js/DateTime.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

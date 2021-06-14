@@ -35,6 +35,7 @@ body {
     width: 130px;
     background: paleturquoise;
     border: none;
+    cursor:pointer;
 }
 
 .register {
@@ -57,4 +58,8 @@ body {
     width:20px;
     height:20px;
     vertical-align:middle;
+}
+
+#remindName,#remindPassword {
+    display:none;
 }

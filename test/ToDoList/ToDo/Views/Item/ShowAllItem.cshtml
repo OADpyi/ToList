@@ -17,7 +17,7 @@
 <ul class="showAllOverdueItem-ul">
     @foreach (var item in Model)
     {
-        <li class="input-input-li" style="list-style-type:none">
+        <li class="input-input-li" >
             <a href="/Item/ChangeStatueInNotFinish?itemId=@item.ItemId" class="a">
                 <div class="circle1">
                     <label class="radio-2">
@@ -28,9 +28,11 @@
             <a href="/Item/ChangeItem?itemId=@item.ItemId" title="修改事项">
                 <span class="input-inventory-name">@item.Content</span>
             </a>
-            <span class="input-inventory-time">@item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute</span>
+            <span class="input-inventory-time">
+            @item.CreateTime.Month/@item.CreateTime.Day  @item.CreateTime.Hour:@item.CreateTime.Minute
+            </span>
             <a onclick="deleteInventory(@item.ItemId)" data-toggle="modal" data-target="#deleteItem">
-                <img src="~/images/Item/删除.png" style="width:20px;height:20px;" />
+                <img src="~/images/Item/删除.png" class="img-delete"/>
             </a>
         </li>
     }

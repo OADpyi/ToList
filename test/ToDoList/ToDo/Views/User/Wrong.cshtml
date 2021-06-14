@@ -15,12 +15,12 @@
             <form action="/User/Login" method="post">
                 <div class="display">
                     <input class="input-box" id="name" name="userName" type="text" placeholder=" name" onblur="checkname();" />
-                    <div id="remindName" class="remind" style="display:none">名字不能为空！</div>
+                    <div id="remindName" class="remind" >名字不能为空！</div>
                     <input class="input-box" id="password" name="password" type="password" placeholder=" password" onblur="checkpassword();" />
-                    <div id="remindPassword" class="remind" style="display:none">密码不能为空！</div>
+                    <div id="remindPassword" class="remind">密码不能为空！</div>
                 </div>
                 <div id="wrong">账号或密码错误！！！</div>
-                <input class="login-up" type="submit" style="cursor:pointer" value="Login" onclick="remind()" />
+                <input class="login-up" type="submit" value="Login" onclick="remind()" />
             </form>
             <a class="register" href="/User/ToRegister">Register</a>
         </div>
